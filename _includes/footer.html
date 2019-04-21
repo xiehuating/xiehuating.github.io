@@ -57,6 +57,10 @@
     {% if site.author.tumblr %}
     <a href="https://{{ site.author.tumblr }}.tumblr.com"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
     {% endif %}
+	
+	{% if site.author.blog %}
+    <a href="{{ site.author.tumblr }}"><i class="fa fa-blog" aria-hidden="true"></i></a>
+    {% endif %}
 
     {% if site.author.email %}
     <a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope" aria-hidden="true"></i></a>
