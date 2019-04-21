@@ -6,11 +6,7 @@
 name:               "Huating Xie"
 
 author:
-  facebook:         your-id
-  youtubeUser:      your-id
-  youtubeChannel:   your-id
-  twitter:          your-id
-  github:           your-id
+  github:           xiehuating
   stackoverflow:    your-id
   quora:            your-id
   linkedin:         your-id
@@ -41,7 +37,7 @@ baseurl:            "" # the subpath of your site, e.g. /blog
 
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:           Asia/Seoul
+timezone:           Asia/Shanghai
 permalink:          /:year-:month-:day/:title/
 
 # Pagination
@@ -62,7 +58,7 @@ nav:
   - name:           "Tags"
     url:            "/tags"
   - name:           "Github"
-    url:            "https://github.com/AWEEKJ/Kiko-plus"
+    url:            "https://github.com/xiehuating"
 
 # Sass
 sass:
