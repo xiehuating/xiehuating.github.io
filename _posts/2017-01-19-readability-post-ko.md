@@ -1,46 +1,291 @@
 ---
 layout: post
-title: "한글 문서 가독성 테스트"
-description: "한글로 된 문서의 가독성을 테스트합니다."
+title: "创建一个SEM着色器"
+description: "球面反射/环境贴图技术（SEM）是一种模拟光照算法中高光反射的快捷方法，在特定的使用场景中，甚至可以模拟完整光照实现效果。"
 date: 2017-01-19
-tags: [샘플 포스트, 가독성, 테스트]
+tags: [WebGL, ThreeJS, matCap, litSphere]
 comments: true
 share: true
 ---
 
-정당의 목적이나 활동이 민주적 기본질서에 위배될 때에는 정부는 헌법재판소에 그 해산을 제소할 수 있고, 정당은 헌법재판소의 심판에 의하여 해산된다. 모든 국민은 고문을 받지 아니하며, 형사상 자기에게 불리한 진술을 강요당하지 아니한다. 새로운 회계연도가 개시될 때까지 예산안이 의결되지 못한 때에는 정부는 국회에서 예산안이 의결될 때까지 다음의 목적을 위한 경비는 전년도 예산에 준하여 집행할 수 있다.
 
-외국인은 국제법과 조약이 정하는 바에 의하여 그 지위가 보장된다. 헌법개정안은 국회가 의결한 후 30일 이내에 국민투표에 붙여 국회의원선거권자 과반수의 투표와 투표자 과반수의 찬성을 얻어야 한다. 대통령은 국가의 독립·영토의 보전·국가의 계속성과 헌법을 수호할 책무를 진다. 국회는 정부의 동의없이 정부가 제출한 지출예산 각항의 금액을 증가하거나 새 비목을 설치할 수 없다.
 
-# 대통령은 법률안의 일
+**This article is a Chinese translation version of [Creating a Spherical Reflection/Environment Mapping shader](https://www.clicktorelease.com/blog/creating-spherical-environment-mapping-shader/) by  [Jaume Sanchez](https://github.com/spite).**
 
-대통령은 필요하다고 인정할 때에는 외교·국방·통일 기타 국가안위에 관한 중요정책을 국민투표에 붙일 수 있다. 한 회계연도를 넘어 계속하여 지출할 필요가 있을 때에는 정부는 연한을 정하여 계속비로서 국회의 의결을 얻어야 한다. 제3항의 승인을 얻지 못한 때에는 그 처분 또는 명령은 그때부터 효력을 상실한다. 이 경우 그 명령에 의하여 개정 또는 폐지되었던 법률은 그 명령이 승인을 얻지 못한 때부터 당연히 효력을 회복한다.
+It's really an excellent tutorial to implement the matCap effect on  WebGL via ThreeJS. You can easily understand and follow the tutorial, even for an amateur developer.
 
-* 국무회의는 대통령·국무총리와 15인 이상 30인 이하의 국무위원으로 구성한다. 대통령은 국무총리·국무위원·행정각부의 장 기타 법률이 정하는 공사의 직을 겸할 수 없다.
-* 나는 헌법을 준수하고 국가를 보위하며 조국의 평화적 통일과 국민의 자유와 복리의 증진 및 민족문화의 창달에 노력하여 대통령으로서의 직책을 성실히 수행할 것을 국민 앞에 엄숙히 선서합니다.
-* 정당은 법률이 정하는 바에 의하여 국가의 보호를 받으며, 국가는 법률이 정하는 바에 의하여 정당운영에 필요한 자금을 보조할 수 있다. 이 헌법공포 당시의 국회의원의 임기는 제1항에 의한 국회의 최초의 집회일 전일까지로 한다.
-* 모든 국민의 재산권은 보장된다. 그 내용과 한계는 법률로 정한다. 감사원은 원장을 포함한 5인 이상 11인 이하의 감사위원으로 구성한다. 모든 국민은 고문을 받지 아니하며, 형사상 자기에게 불리한 진술을 강요당하지 아니한다.
+Thanks a lot~ 
 
-## 국회의원은 국가이익
-체포·구속·압수 또는 수색을 할 때에는 적법한 절차에 따라 검사의 신청에 의하여 법관이 발부한 영장을 제시하여야 한다. 다만, 현행범인인 경우와 장기 3년 이상의 형에 해당하는 죄를 범하고 도피 또는 증거인멸의 염려가 있을 때에는 사후에 영장을 청구할 수 있다. 모든 국민은 소급입법에 의하여 참정권의 제한을 받거나 재산권을 박탈당하지 아니한다. 감사원은 원장을 포함한 5인 이상 11인 이하의 감사위원으로 구성한다. 군인 또는 군무원이 아닌 국민은 대한민국의 영역안에서는 중대한 군사상 기밀·초병·초소·유독음식물공급·포로·군용물에 관한 죄중 법률이 정한 경우와 비상계엄이 선포된 경우를 제외하고는 군사법원의 재판을 받지 아니한다.
 
-1. 대통령은 전시·사변 또는 이에 준하는 국가비상사태에 있어서 병력으로써 군사상의 필요에 응하거나 공공의 안녕질서를 유지할 필요가 있을 때에는 법률이 정하는 바에 의하여 계엄을 선포할 수 있다.
-2. 대통령은 국민의 보통·평등·직접·비밀선거에 의하여 선출한다. 대통령은 국무회의의 의장이 되고, 국무총리는 부의장이 된다. 대통령은 국가의 독립·영토의 보전·국가의 계속성과 헌법을 수호할 책무를 진다.
-3. 국민경제의 발전을 위한 중요정책의 수립에 관하여 대통령의 자문에 응하기 위하여 국민경제자문회의를 둘 수 있다. 대법원과 각급법원의 조직은 법률로 정한다.
-4. 모든 국민은 근로의 의무를 진다. 국가는 근로의 의무의 내용과 조건을 민주주의원칙에 따라 법률로 정한다. 국가는 건전한 소비행위를 계도하고 생산품의 품질향상을 촉구하기 위한 소비자보호운동을 법률이 정하는 바에 의하여 보장한다.
-5. 국민경제자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다. 법관은 헌법과 법률에 의하여 그 양심에 따라 독립하여 심판한다. 누구든지 체포 또는 구속의 이유와 변호인의 조력을 받을 권리가 있음을 고지받지 아니하고는 체포 또는 구속을 당하지 아니한다. 체포 또는 구속을 당한 자의 가족등 법률이 정하는 자에게는 그 이유와 일시·장소가 지체없이 통지되어야 한다.
-6. 국가는 재해를 예방하고 그 위험으로부터 국민을 보호하기 위하여 노력하여야 한다. 법률안에 이의가 있을 때에는 대통령은 제1항의 기간내에 이의서를 붙여 국회로 환부하고, 그 재의를 요구할 수 있다. 국회의 폐회중에도 또한 같다.
 
-### 헌법재판소에서 법률
+**译者仅是一名编程和图形技术爱好者，如果翻译中有谬误之处，请不吝指正~**
 
-대한민국은 민주공화국이다. 국민경제의 발전을 위한 중요정책의 수립에 관하여 대통령의 자문에 응하기 위하여 국민경제자문회의를 둘 수 있다. 모든 국민의 재산권은 보장된다. 그 내용과 한계는 법률로 정한다. 모든 국민은 신속한 재판을 받을 권리를 가진다. 형사피고인은 상당한 이유가 없는 한 지체없이 공개재판을 받을 권리를 가진다. 대법원장은 국회의 동의를 얻어 대통령이 임명한다. 대통령은 국민의 보통·평등·직접·비밀선거에 의하여 선출한다. 정당의 목적이나 활동이 민주적 기본질서에 위배될 때에는 정부는 헌법재판소에 그 해산을 제소할 수 있고, 정당은 헌법재판소의 심판에 의하여 해산된다.
 
-> 국가는 모성의 보호를 위하여 노력하여야 한다. 모든 국민은 학문과 예술의 자유를 가진다. 국가는 건전한 소비행위를 계도하고 생산품의 품질향상을 촉구하기 위한 소비자보호운동을 법률이 정하는 바에 의하여 보장한다. 국무위원은 국무총리의 제청으로 대통령이 임명한다. 국회의원은 법률이 정하는 직을 겸할 수 없다.
 
-#### 선거운동은 각급 선거
+------
 
-대통령은 헌법과 법률이 정하는 바에 의하여 공무원을 임면한다. 군사법원의 조직·권한 및 재판관의 자격은 법률로 정한다. 국가는 사회보장·사회복지의 증진에 노력할 의무를 진다. 모든 국민은 학문과 예술의 자유를 가진다. 국가는 과학기술의 혁신과 정보 및 인력의 개발을 통하여 국민경제의 발전에 노력하여야 한다. 모든 국민은 신체의 자유를 가진다. 누구든지 법률에 의하지 아니하고는 체포·구속·압수·수색 또는 심문을 받지 아니하며, 법률과 적법한 절차에 의하지 아니하고는 처벌·보안처분 또는 강제노역을 받지 아니한다. 학교교육 및 평생교육을 포함한 교육제도와 그 운영, 교육재정 및 교원의 지위에 관한 기본적인 사항은 법률로 정한다.
+#### Terms | 术语
 
---- 
+- [SEM](http://wiki.polycount.com/wiki/Spherical_environment_map): Spherical reflection/environment mapping，可译为**球面反射/环境贴图**。
+- [LitSphere](http://wiki.polycount.com/w/index.php?title=Lit_Sphere&redirect=no): Lit sphere，或Lit spheres，直译为**被照亮的球体** 。
+- [MatCap](http://wiki.unity3d.com/index.php/MatCap): Matcaps，或Material capture，译为**材质捕获**。
+- [Suzanne](https://en.wikipedia.org/wiki/Blender_(software)#Suzanne): a monkey header 3D model，是一个猴子头部的三维模型。
+- [Texel](https://en.wikipedia.org/wiki/Texel_(graphics)): **Tex**ture **el**ement或**Tex**ture pix**el**的合成字，译为**纹理元素**，简称**纹素**。
+- [Torus  Knot](https://en.wikipedia.org/wiki/Torus_knot): 环面纽结，一种特殊的结。
+- Shader：着色器
+- Material:  材质、材质球
+- Texture：纹理
+- Map：贴图
 
-이 문서는 [한글 Lorem Ipsum](http://guny.kr/stuff/klorem/)으로 생성되었습니다.
+
+
+------
+
+------
+
+
+
+# Creating a Spherical Reflection/Environment Mapping shader | 创建一个SEM着色器
+
+文章写于2014年4月16日
+
+阅读时间：5分钟
+
+主题： WebGL， GLSL， three.js， shaders
+
+- [**查看DEMO**](https://www.clicktorelease.com/code/spherical-environment-mapping/)
+- [**GitHub代码链接**](https://github.com/spite/spherical-environment-mapping)
+
+![](G:/doc%20translation/Creating%20a%20Spherical%20ReflectionEnvironment%20Mapping%20shader/images/spherical-environment-mapping.jpg)
+
+灯光是电脑生成图像最重要的部分之一。为了得到最终真实可信的展示效果，需要进行大量计算、设置以及微调工作。
+
+球面反射/环境贴图技术（SEM）是一种模拟（译注：此处表达的是伪造、仿造的意思，表示这种技术并没有真正的使用着色器中的光照算法来实现，只是用一张静态的位图来模拟反射光。如果你还是理解不了，那么就理解为这就是一张最基础的颜色贴图，然后在颜色贴图上画上了反射光或反射环境。）光照算法中高光反射的快捷方法，在特定的使用场景中，甚至可以模拟完整光照实现效果。这种技术已经在三维软件中广泛应用，如： [Pixologic ZBrush](http://pixologic.com/zbrush/downloadcenter/library/) 和 [Luxology Modo](http://docs.luxology.com/modo/701/help/pages/shaderendering/ShaderItems/MatCap.html)。
+
+------
+
+
+
+## LitSphere/MatCap texture maps | 材质捕获的纹理贴图
+
+SEM会使用特制的纹理贴图，这种贴图被叫做“lit spheres”或“matcaps”。它们就是基本的球面反射贴图，但是显示效果上有更多漫反射颜色，而不是像下图中最左侧的金属反光球一样将场景清晰的反射出来。
+
+这种球面贴图包含了在相机前方展示的所有元素，也就说此贴图包含了入射光线照射到的、面朝相机的球体表面（译注：模型背朝相机部分的反射因为相机没有拍摄到，所以贴图中也没有办法表达）。这也是它不能作为完美环境贴图（译注：原文为perfect environment map，应该指的是[Cube map](https://en.wikipedia.org/wiki/Cube_mapping)、[Equirectangular](https://en.wikipedia.org/wiki/Equirectangular_projection)这种捕获到360°的环境贴图方式）的原因：因为缺失了背朝相机部分的图像信息，所以这种反射不能跟随相机视角旋转而旋转。
+
+那么，我们所能模拟的就是相机和灯光固定不动、模型自身转动的显示效果（译注：类似淘宝商家拍摄商品展示照片，相机是放在三脚架上固定的，灯光也是固定的（或使用摄影专用灯箱），将产品放在一个转盘上，每拍一张照片底部的转盘就旋转一定角度。[见图示](images/rotate-example.gif)）。
+
+![](G:/doc%20translation/Creating%20a%20Spherical%20ReflectionEnvironment%20Mapping%20shader/images/spherical-maps.jpg)
+
+------
+
+
+
+## Setting up the shader | 设置着色器
+
+SEM的基本思路是使用从片元上法向量获取的UV坐标（此坐标用来查找matCap纹理）替代模型对象的原始纹理坐标。即可以在顶点着色器中完成（GPU会处理插值），也可以在片元着色器中完成。我们会先实现逐顶点的版本。
+
+为了全面的理解SEM，我们假定一个完全正对相机镜头的平面（即平面的法向量与相机的向量平行）被映射到正正好好位于matCap纹理中心的纹素上；随着法向量从相机向量偏移（即两个向量打破平行状态，夹角从0°趋向于90°），被映射到的纹素就会越靠近边缘。指向上方的法线（我们说的是屏幕空间，所以这里的“上方”指的是物理屏幕的顶部）被映射到matCap纹理的顶部，指向下方的法线被映射到matCap纹理的底部。法线指向左和右也是同理。
+
+所以，第一步我们需要设置两个向量，e(Eye)和n(Normal)。Eye是从相机（空间中在原点上的一个点。此处原文为“a point in space at the origin”，不确定是否翻译准确）射到片元位置的向量。Normal是在空间屏幕中的法线。我们需要将三维位置转换成四维向量，使它能够和矩阵相乘。
+
+一旦我们有了这两个向量，我们就能计算反射向量了。
+
+> 这个教程是基于**GLSL**语言编写着色器的。如果你使用了其他着色语言，并且该语言没有`reflect()`函数，你可以使用相对应的表达式替代：`r = e - 2. * dot( n, e ) * n;`
+
+![](G:/doc%20translation/Creating%20a%20Spherical%20ReflectionEnvironment%20Mapping%20shader/images/st-spheremap.jpg)
+
+*译注：上图为文章作者插入的一个公式的图片，没有理解此公式的意思，并且整片文章中貌似也没有用到这个公式。*
+
+我们获取向量，然后应用到公式中得到UV元组。
+
+这是顶点着色器的代码：
+
+```javascript
+//SEM shader, per-vertex
+//GLSL - Vertex shader source
+
+varying vec2 vN;
+
+void main() {
+
+  vec4 p = vec4( position, 1. );
+
+  vec3 e = normalize( vec3( modelViewMatrix * p ) );
+  vec3 n = normalize( normalMatrix * normal );
+
+  vec3 r = reflect( e, n );
+  float m = 2. * sqrt(
+    pow( r.x, 2. ) +
+    pow( r.y, 2. ) +
+    pow( r.z + 1., 2. )
+  );
+  vN = r.xy / m + .5;
+
+  gl_Position = projectionMatrix * modelViewMatrix * p;
+
+}
+```
+
+片元着色器获取了UV元组经过GPU插值后的值，然后使用它查找matCap纹理上对应的颜色值。这是代码：
+
+```javascript
+//SEM shader, per-vertex
+//GLSL - Fragment shader source
+
+uniform sampler2D tMatCap;
+
+varying vec2 vN;
+
+void main() {
+
+  vec3 base = texture2D( tMatCap, vN ).rgb;
+  gl_FragColor = vec4( base, 1. );
+
+}
+```
+
+在JavaScript代码，使用了thrss.js创建着色器材质。实例化了一个新的`THREE.ShaderMaterial`，引用了上文定义的顶点着色器和片元着色器脚本，在一个材质`uniform`对象中使用了matCap贴图。以防万一，将水平和垂直的纹理包裹模式设置为`THREE.ClampToEdgeWrapping`，纹理边缘不会被卷曲（译注：猜测这边作者的意思是纹理不会被重复铺贴或者镜像铺贴，其实根据three.js开发文档中的描述，`.wrapS`和`.wrapT`的默认值就是`THREE.ClampToEdgeWrapping`）。这是代码：
+
+```javascript
+//Creating THREE.js material
+//JavaScript - index.html
+
+var material = new THREE.ShaderMaterial( {
+
+  uniforms: {
+    tMatCap: {
+      type: 't',
+      value: THREE.ImageUtils.loadTexture( 'matcap.jpg' )
+    },
+  },
+  vertexShader: document.getElementById( 'sem-vs' ).textContent,
+  fragmentShader: document.getElementById( 'sem-fs' ).textContent,
+  shading: THREE.SmoothShading
+
+} );
+
+material.uniforms.tMatCap.value.wrapS =
+material.uniforms.tMatCap.value.wrapT =
+THREE.ClampToEdgeWrapping;
+```
+
+材质准备完毕，已经可以指定给模型对象了。
+
+
+
+------
+
+
+
+## Assigning the material to an object | 将材质指定到几何体对象
+
+使用SEM材质很适合表达多边形上的不同类型高光，比如：褶皱、凹凸、甚至缓慢的波动。但在立方体上的表现效果不理想。在球体上效果是完全没有变化的，SEM在一个球体上的效果和matCap纹理的平面投影的效果完全相同（译注：也就说球体上的效果就是matCap纹理贴图的效果，不论你旋转摄像机镜头到任何角度，都是这个显示效果，不会有任何变化）。使用环面纽结几何体作为这个着色器测试模型是一个非常好的选择。
+
+![](G:/doc%20translation/Creating%20a%20Spherical%20ReflectionEnvironment%20Mapping%20shader/images/torus-different-materials.jpg)
+
+> 你可能同样对[Creating a disorted sphere with Perlin Noise](https://www.clicktorelease.com/blog/vertex-displacement-noise-3d-webgl-glsl-three-js)感兴趣。
+
+
+
+------
+
+
+
+## Phong (per-fragment) shading | Phong（逐片元）着色
+
+我并不认为逐片元着色是真正必要的，但可能也取决于被渲染的模型，特别是被渲染的模型是低多边形面片的（译注：模型顶点数很少，精度很低）。在这种情况下，你可能需要逐片元的去计算，而不是依靠GPU插值。下面是使用逐片元着色修改后顶点着色器：
+
+```
+// SEM shader, per-fragment
+// GLSL - vertex shader source
+
+varying vec3 e;
+varying vec3 n;
+
+void main() {
+
+  e = normalize( vec3( modelViewMatrix * vec4( position, 1.0 ) ) );
+  n = normalize( normalMatrix * normal );
+
+  gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1. );
+
+}
+```
+
+注意我们没有计算`vN`元组，并使用`varying`传递到片元着色器中，而是使用`e`(Eye)和`n`(Normal)值替代，并传递到片元着色器中。下面是片元着色器的代码：
+
+```
+//SEM shader, per-fragment
+//GLSL - fragment shader source
+
+uniform sampler2D tMatCap;
+
+varying vec3 e;
+varying vec3 n;
+
+void main() {
+
+  vec3 r = reflect( e, n );
+  float m = 2. * sqrt( pow( r.x, 2. ) + pow( r.y, 2. ) + pow( r.z + 1., 2. ) );
+  vec2 vN = r.xy / m + .5;
+
+  vec3 base = texture2D( tMatCap, vN ).rgb;
+
+  gl_FragColor = vec4( base, 1. );
+
+}
+```
+
+所以，之前在顶点着色器中被计算的`reflection`和`vN`值，在被插值后传递到片元着色器中。而在现在，每个片元都会计算`reflection`和`vN`值。
+
+------
+
+
+
+## DEMO | 示例
+
+![](G:/doc%20translation/Creating%20a%20Spherical%20ReflectionEnvironment%20Mapping%20shader/images/demo-snapshot.jpg)
+
+> [Spherical Environment Mapping shader in action](https://www.clicktorelease.com/code/spherical-environment-mapping)
+
+这个示例展示三种不同的材质（**Matte red**，**Shiny black** 和 **Skin**），被用于三个不同的模型（**Torus  Knot**， **Bolb** 和 **Suzanne**）。他们的材质着色器是完全相同的，唯一的不同是matCap纹理贴图。这展现这种技术惊人的强大能力，它使模型对象的效果完全不同。
+
+勾选“Enable Phong(per-pixel) shading”复选框后，可以观察逐顶点和逐片元之前的差异。最值得关注的差异在模型对象的边缘处。
+
+**Torus Knot**是three.js的自带的几何体对象`THREE.TorusKnotGeometry`。**Bolb**是在`THREE.IcosahedronGeometry`几何体对象上通过Perlin噪音函数（混合了标准噪音和crinkly噪音）进行了顶点扰乱。**Suzanne**是Blender的吉祥物，并使用`THREE.SubdivisionModifier`进行细分后得到的一个更光滑模型。
+
+这个示例可以在OSX、Windows和Linux平台的Chrome、Firefox、Safari浏览器上正常工作。也能工作在Android平台的Chrome和Firefox。在移动端试一下，这个示例支持触摸事件。
+
+------
+
+
+
+## Conclusion | 小结
+
+就这么多，SEM也没什么神秘之处。它的关键之处在于使用优秀的模型以及优秀的matCap纹理贴图。谷歌图片搜索、加上图像编辑软件、最好再有一个专业的美术，这就够了！
+
+可以基于这种SEM的技术进行更多尝试探索：
+
+- 在一个前置步骤中通过着色器创建matCap纹理；（译注：猜测此处是指用shader实现一个程序纹理作为matCap纹理贴图）
+- 结合多张纹理贴图，以模拟不同光源的影响；
+- 或尝试将matCap纹理应用到法线贴图中，并观察显示效果。
+
+------
+
+------
+
+<br/>
+
+<br/>
+
+<br/>
+
+Interpreted by [Xie Huating](https://github.com/xiehuating/), 2019-04-22
+
+转载此文请注明**[原文出处](https://www.clicktorelease.com/blog/creating-spherical-environment-mapping-shader/)**与**[翻译出处](https://github.com/xiehuating/creating-spherical-environment-mapping-shader)**
+
+<br/>
+
+<br/>
+
+<br/>
