@@ -3,129 +3,66 @@ title: About
 permalink: /about/
 ---
 
-You can see live demo [here](https://aweekj.github.io/Kiko-plus). This theme is inspired by [Kiko](http://github.com/gfjaru/Kiko) theme.
+<br/>
 
-## Features
+> ### Nobody gets those values right the first time, it's all after much tinkering and iterating.
 
-- Disqus comment system
-- Google analytics
-- Pagination support
-- Custom tags
-- SEO support
+<br/>
 
+## Contact
 
-## Installation
+Email: xiehuating@google.com
 
-#### Method 1: new master's repository (The Best)
+Site: [www.xiehuating.com](<http://www.xiehuating.com/>)
 
-1. First [fork](https://github.com/AWEEKJ/Kiko-plus/fork) it.
-2. Change your forked repository name _Kiko-plus_ to __USERNAME.github.io__ where __USERNAME__ is your github username.
-3. Access your new blog via [https://username.github.io](https://username.github.io).
-4. [See configuration](#configuration).
+<br/>
 
-#### Method 2: gh-pages in existing repository
+# Interests
 
-1. Create a new branch called _gh-pages_ in the repository where you want to add a template [managing branches](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/).
-2. From command line run `git clone https://github.com/AWEEKJ/Kiko-plus.git` - this will clone _Kiko-plus_ template to your computer.
-3. Create new branch `git checkout -b gh-pages` where _gh-pages_ will be your branch name.
-4. Add remote, which is your repo from the first step, to your new branch `git remote add gh-pages https://github.com/<yourName>/<yourMaster>/gh-pages`. _yourName_ is your account name and _yourMaster_ is your repository.
-5. Push new branch to remote `git push gh-pages`.
-6. Update `_config.yml` file by changing `baseurl: "<branchName>"` _branchName_ is your branch name where _gh-pages_ resides. See [configuration](#configuration).
+Thinking with Brain; 
 
-#### Method 3: Run it locally
+Practicing with Hands.
 
-1. Download [zip](https://github.com/AWEEKJ/Kiko-plus/archive/master.zip) or clone it `git clone https://github.com/AWEEKJ/Kiko-plus`.
-2. Go inside folder and run `jekyll serve` or `rake preview`. This will build a website which you can access [https://localhost:4000](https://localhost:4000). You need to have [Jekyll](https://jekyllrb.com/docs/installation/) installed to do this.
+Writing with Office;
 
+Outlining with Axure;
 
-## Configuration
+Polishing with Sketch;
 
-All configuration is done via `_config.yml` file which you will find in your main repo folder. Change this `<something>` to yours.
+Drawing with Photoshop;
 
-### Basic
+Modeling with Blender.
 
-- Config your blog name.
+Using HTML to draw Frames;
 
-```yml
-name: <blog-name>
-```
+Using CSS to draw Styles;
 
-- These configuration in `author:` is for links to icons in footer. If you want to add more link icons, modify `_includes/footer.html` file.
+Using JS to draw Behavior;
 
-```yml
-author:
-  facebook:         your-id
-  twitter:          your-id
-  github:           your-id
-  linkedin:         your-id
-  medium:           your-id
-  tumblr:           your-id
-  email:            your-id@your-email.com
-```
+Using WebGL to draw Triangles;
 
-- Change copyright year and name in footer.
+Using GLSL to draw Lights;
 
-```yml
-copyright:
-  year:             2017
-  name:             Kiko
-```
+Using Node to draw Server;
 
-### Google analytics
+Using Mongo to draw Data.
 
-- Change this to your Google Analytic ID.
+<br/>
 
-```yml
-google-analytics:
-  id:               "your-id"
-```
+## Bio
 
-### Disqus
+[**Glodon Ltd**](https://www.glodon.com/)
 
-- Change this to your Disqus short name.
+*2017.12 --*
 
-```yml
-disqus:
-  id:               "your-id"
-```
+[**Shanghai Yiguo E-commerce Ltd**](http://www.yiguo.com/)
 
-### URL
+*2017.3 -- 2017.12*
 
-- Config your domain.
+[**ShangHai Shidun Network Technology Ltd**](http://www.threedpad.com/)
 
-```yml
-url: "https://<your-name>.github.io"
-```
+*2016.7 -- 2017.3*
 
-- **NOTE** When if running locally, change url to 
+[**Autodesk Inc**](https://www.autodesk.com/) 
 
-```yml
-url: "https://localhost:4000"
-```
-
-- Change this to your branch name where _gh-pages_ resides. 
-- **NOTE** apply only if you used __Method 2__ for installation.
-
-```yml
-baseurl: "/<branch-name>"
-```
-
-## Rakefile Usage
-
-```bash
-# Create new post
-$ rake post title="A Title" [date="2015-08-16"] [tags="[tag1, tag2]"] 
-
-# Create new draft post
-$ rake draft title="A Title" [date="2015-08-16"] [tags="[tag1, tag2]"]
-
-# Install Jekyll Plugins. Do before running in local.
-$ rake geminstall
-
-# Run in Local
-$ rake preview
-```
-
-## License
-
-This theme is released under MIT License.
+*2013.7 -- 2016.7*
