@@ -3,11 +3,11 @@
 # # # # # # # # # # # # #
 
 # Basic
-name:               "Huating Xie"
+name:               "Xie Huating"
 
 author:
   github:           xiehuating
-  blog:             http://www.xiehuating.com
+  blog:             www.xiehuating.com
   email:            xiehuating@gmail.com
 
 copyright:
@@ -45,8 +45,8 @@ kramdown:
 nav:
   - name:           "About"
     url:            "/about"
-  - name:           "Archive"
-    url:            "/archive"
+#  - name:           "Archive"
+#    url:            "/archive"
   - name:           "Tags"
     url:            "/tags"
   - name:           "Github"

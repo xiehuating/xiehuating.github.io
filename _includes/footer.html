@@ -19,7 +19,7 @@
     {% endif %}
 
     {% if site.author.github %}
-    <a href="https://github.com/{{ site.author.github }}"><i class="fa fa-github" aria-hidden="true"></i></a>
+    <a href="https://github.com/{{ site.author.github }}"><img src="{{ site.baseurl }}/assets/images/icons/github.png"></a>
     {% endif %}
 	
 	{% if site.author.stackoverflow %}
@@ -59,11 +59,11 @@
     {% endif %}
 	
 	{% if site.author.blog %}
-    <a href="https://{{ site.author.blog }}.com"><i class="fa fa-blog" aria-hidden="true"></i></a>
+    <a href="http://{{ site.author.blog }}"><img src="{{ site.baseurl }}/assets/images/icons/earth.png"></a>
     {% endif %}
 
     {% if site.author.email %}
-    <a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    <a href="mailto:{{ site.author.email }}"><img src="{{ site.baseurl }}/assets/images/icons/mail4.png"></a>
     {% endif %}
 
   </div>

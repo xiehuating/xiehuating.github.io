@@ -58,16 +58,18 @@ body {
   &-nav {
     a {
       color: $oc-gray-7;
-      text-transform: lowercase;
+      text-transform: uppercase;
       -webkit-transition: all .2s ease;
          -moz-transition: all .2s ease;
               transition: all .2s ease;
-      margin-right: .3rem;
+      margin-right: 1rem;
+      font-weight: 500;
+      text-decoration: underline;
 
       &:hover,
       &:focus {
-        color: $oc-gray-7;
-        text-decoration: none;
+        color: $oc-blue-8;
+        text-decoration: underline;
       }
     }
   }
@@ -376,5 +378,14 @@ body {
       color: $base-color;
       margin: 4px;
     }
+
+    img{
+      display: inline-block;
+      margin: 2rem 1rem 2rem 1rem;
+      width: 32px;
+      height: 32px;
+      opacity: 0.84;
+    }
+
   }
 }

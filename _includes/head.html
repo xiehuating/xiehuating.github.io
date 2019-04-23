@@ -4,10 +4,11 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
 
   <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" type="text/css">
 
   <!-- Font -->
-  <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/5.8.1/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
 
@@ -16,5 +17,6 @@
 
 
   {% include google-analytics.html %}
-
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="{{ site.baseurl }}/assets/images/favicon.ico">
 </head>
