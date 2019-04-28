@@ -9,29 +9,29 @@ permalink: /about/
 
 <br/>
 
-## Bio
+# Bio
 
-[**Glodon Ltd <i class="fa fa-external-link-square" aria-hidden="true"></i>**](https://www.glodon.com/) <br/>  *2017.12 --*
+[**Glodon Ltd <i class="fa fa-external-link-square" aria-hidden="true"></i>**](https://www.glodon.com/) <br/>*2017.12 -- ( UX Designer )*
 
-[**Shanghai Yiguo E-commerce Ltd <i class="fa fa-external-link-square" aria-hidden="true"></i>**](http://www.yiguo.com/) <br/>*2017.3 -- 2017.12*
+[**Shanghai Yiguo E-commerce Ltd <i class="fa fa-external-link-square" aria-hidden="true"></i>**](http://www.yiguo.com/) <br/>*2017.3 -- 2017.12 ( UX Designer )*
 
-[**ShangHai Shidun Network Technology Ltd <i class="fa fa-external-link-square" aria-hidden="true"></i>**](http://www.threedpad.com/) <br/>*2016.7 -- 2017.3*
+[**ShangHai Shidun Network Technology Ltd <i class="fa fa-external-link-square" aria-hidden="true"></i>**](http://www.threedpad.com/) <br/>*2016.7 -- 2017.3 ( Product Designer )* 
 
-[**Autodesk Inc <i class="fa fa-external-link-square" aria-hidden="true"></i>**](https://www.autodesk.com/) <br/>*2013.7 -- 2016.7*<br/>*2012.5 -- 2013.7 (intern)*
-
-<br/>
-
-# Interest
-
-Thinking with Brain; <br/>Practicing with Hands.
-
-Writing with Office; <br/>Outlining with Axure; <br/>Polishing with Sketch; <br/>Drawing with Photoshop; <br/>Modeling with Blender.
-
-Using HTML to draw Frames; <br/>Using CSS to draw Styles; <br/>Using JavaScript to draw Behavior; <br/>Using WebGL to draw Triangles; <br/>Using GLSL to draw Lights; <br/>Using Node to draw Server; <br/>Using Mongo to draw Data.
+[**Autodesk Inc <i class="fa fa-external-link-square" aria-hidden="true"></i>**](https://www.autodesk.com/) <br/>*2013.7 -- 2016.7 ( Product Designer )*<br/>*2012.5 -- 2013.7 ( Intern )*
 
 <br/>
 
-## Contact me
+# Skills
+
+**As a man,** <br/>Thinking with Brain; <br/>Making with Hands.
+
+**As a designer,** <br/>Writing with Office; <br/>Outlining with Axure; <br/>Polishing with Sketch; <br/>Drawing with Photoshop; <br/>Modeling with Blender.
+
+**As a maker,**  <br/>Using HTML to draw Frames; <br/>Using CSS to draw Styles; <br/>Using JavaScript to draw Behavior; <br/>Using WebGL to draw Triangles; <br/>Using GLSL to draw Lights; <br/>Using Node to draw Server; <br/>Using Mongo to draw Data.
+
+<br/>
+
+# Contact me
 
 **Email:** [**xiehuating@google.com <i class="fa fa-external-link-square" aria-hidden="true"></i>**](mailto:xiehuating@gmail.com)
 
