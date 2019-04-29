@@ -31,9 +31,9 @@ permalink: /about/
 
 <br/>
 
-# Contact me
+# Contacts
 
-**Email:** [**xiehuating@google.com <i class="fa fa-external-link-square" aria-hidden="true"></i>**](mailto:xiehuating@gmail.com)
+**Email:** [**xiehuating@google.com**](mailto:xiehuating@gmail.com)
 
 **Site:** [**www.xiehuating.com <i class="fa fa-external-link-square" aria-hidden="true"></i>**](http://www.xiehuating.com/)
 

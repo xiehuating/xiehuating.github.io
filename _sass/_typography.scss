@@ -29,6 +29,16 @@ a {
   &:focus {
     text-decoration: underline;
   }
+
+  strong {
+    color: #333;
+
+    &:hover,
+    &:focus  {
+      color: $link-color;
+    }
+
+  }
 }
 
 

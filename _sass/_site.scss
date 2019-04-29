@@ -77,17 +77,17 @@ body {
 
 .header-small {
   text-align: left;
-  margin-bottom: .75rem;
-  font-size: .75rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
 
   a {
-    color: $base-color;
-
+    color: $oc-gray-6;
     &:hover,
     &:focus {
       text-decoration: none;
+      color: $oc-gray-7;
     }
   }
 }
