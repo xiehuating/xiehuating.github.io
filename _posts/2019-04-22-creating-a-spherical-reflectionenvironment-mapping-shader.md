@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[翻译]Creating a Spherical Reflection/Environment Mapping shader"
+title: "[翻译] Creating a Spherical Reflection/Environment Mapping shader"
 description: "球面反射/环境贴图技术（SEM）是一种模拟光照算法中高光反射的快捷方法，在特定的使用场景中，甚至可以模拟完整光照实现效果。"
 date: 2019-04-22
-tags: [webgl, threejs, matCap, shader, translation]
+tags: [webgl, threejs, matCap, shader, glsl, translation, tutorial]
 comments: false
 share: false
 ---
