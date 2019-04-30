@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A Full and Comprehensive Style Test"
+title: "[Page Sample] A Full and Comprehensive Style Test"
 description: "Test post for style"
 date: 2016-08-15
 tags: [sample post]

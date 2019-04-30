@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Testing Readability with a Bunch of Text"
+title: "[Page Sample] Testing Readability with a Bunch of Text"
 description: "A ton of text to test readability."
 date: 2012-05-22
 tags: [sample post]
