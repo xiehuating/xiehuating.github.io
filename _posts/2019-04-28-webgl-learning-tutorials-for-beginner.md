@@ -45,7 +45,7 @@ share: false
 
 ## GLSL/ESSL在线学习资料
 
-- [The Book of Shaders](https://thebookofshaders.com/)（中/英）<i class="fa fa-star" aria-hidden="true" style="color: #ffc107" title="Favorite"></i> 
+- [The Book of Shaders](https://thebookofshaders.com/)（中/英）<i class="fa fa-star" aria-hidden="true" style="color: #ffc107" title="Favorite"></i> ，讲解浅显易懂，并且提供了很多现成的函数算法和优秀的GLSL相关资源。还在连载中，已经很久没有更新了，这个项目的[GitHub](https://github.com/patriciogonzalezvivo/thebookofshaders)地址。正在学习中~
 - [GLSL: An Introduction](http://nehe.gamedev.net/article/glsl_an_introduction/25007/)（英）
 
 #### Shader create tool
@@ -75,7 +75,7 @@ share: false
 ## 中文图书
 
 - [WebGL Programming Guide / WebGL编程指南](https://book.douban.com/subject/25909351/)（[Download DEMO](https://sites.google.com/site/webglbook/home/downloads)）<i class="fa fa-star" aria-hidden="true" style="color: #ffc107" title="Favorite"></i> 
-- [OpenGL Shading Language / OpenGL着色语言](https://book.douban.com/subject/1911849/)，这本书是用的OpenGL语言，但是因为比较老，所以书中GLSL语言貌似现在WebGL的GLSL都能支持，内置函数命名有些不同，但是能够看明白。在学习中~
+- [OpenGL Shading Language / OpenGL着色语言](https://book.douban.com/subject/1911849/)，这本书是用的OpenGL语言，但是因为比较老，所以书中GLSL语言貌似现在WebGL的GLSL都能支持，内置函数命名有些不同，但是能够看明白。正在学习中~
 - [Learning Three.js / Three.js开发指南](https://book.douban.com/subject/27127506/)（[Online DEMO](http://www.smartjava.org/content/all-109-examples-my-book-threejs-threejs-version-r63/)、[GitHub DEMO](https://github.com/josdirksen/learning-threejs)）<i class="fa fa-star" aria-hidden="true" style="color: #ffc107" title="Favorite"></i> 
 - [Interactive Computer Graphics / 交互式计算机图形学](https://book.douban.com/subject/26916420/)（[Resources](https://www.cs.unm.edu/~angel/BOOK/INTERACTIVE_COMPUTER_GRAPHICS/SEVENTH_EDITION/)）<i class="fa fa-star" aria-hidden="true" style="color: #ffc107" title="Favorite"></i> ，这是一本正儿八经、非常全面的高校计算机图形学教科书。难得的是这本教材居然用JavaScript和WebGL作为讲解计算机图形学的语言，缺点是这本书有点厚、难度也较高，课后习题我基本都不会做。相见恨晚，努力学习中~~~
 - [Introduction to Computer Graphics / 计算机图形学导论——实用学习指南（WebGL版）](https://book.douban.com/subject/30856114/)，这本书没有看过，发现这本教材的时候，已经不需要学习导论了。但是这种导论、概论类的教材对初学者入门非常有帮助。
