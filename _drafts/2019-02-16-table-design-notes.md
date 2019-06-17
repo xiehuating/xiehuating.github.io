@@ -132,7 +132,7 @@ share: false
 
 [**Designing The Perfect Feature Comparison Table**](https://www.smashingmagazine.com/2017/08/designing-perfect-feature-comparison-table/)
 
-[**Guidelines for Designing Tables**](understandinggraphics.com/design/data-table-design/) （[插图](https://www.behance.net/gallery/885004/Designing-Effective-Data-Tables)、[中文版](https://www.biaodianfu.com/guidelines-for-designing-tables.html)）
+[**Guidelines for Designing Tables**](http://understandinggraphics.com/design/data-table-design/) （[插图](https://www.behance.net/gallery/885004/Designing-Effective-Data-Tables)、[中文版](https://www.biaodianfu.com/guidelines-for-designing-tables.html)）
 
 [**Data Tables Design Basics**](https://design-nation.icons8.com/intro-to-data-tables-design-349f55861803)
 

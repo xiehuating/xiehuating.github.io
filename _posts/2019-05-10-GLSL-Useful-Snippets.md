@@ -285,14 +285,27 @@ float almostIdentity( float x, float m, float n )
 
 <br/>
 
-**Impulse**
+**Exponential Impulse**
 
-![](/images/glsl-useful-snippets/useful-little-functions/impulse.png)
+![](/images/glsl-useful-snippets/useful-little-functions/exponential-impulse.png)
 
 ```c
-float impulse( float k, float x ){
+float expImpulse( float k, float x ){
     float h = k*x;
     return h*exp(1.0-h);
+}
+```
+
+<br/>
+
+**Polynomial Impulse**
+
+![](/images/glsl-useful-snippets/useful-little-functions/polynomial-impulse.png)
+
+```c
+float quaImpulse( float k, float x )
+{
+    return 2.0*sqrt(k)*x/(1.0+k*x*x);
 }
 ```
 
