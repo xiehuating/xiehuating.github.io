@@ -2,8 +2,8 @@
 layout: post
 title: "GLSL代码片段"
 description: "本文中收集GLSL常用的代码片段和造型函数。将这些封装好的函数复制到vertexShader和fragmentShader中，然后在main()中通过函数名直接调用。"
-date: 2019-05-10
-tags: [ webgl, glsl ]
+date: 2019-12-04
+tags: [ CSS ]
 comments: false
 share: false
 ---
